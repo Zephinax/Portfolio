@@ -15,10 +15,6 @@ input[type='number'] {
 }
 
 :root {
-  /**
-   * colors
-   */
-
   --raw-seinna: hsl(342, 61%, 55%);
   --sizzling-sunrise: hsl(342, 61%, 55%);
   --scarlet: hsl(342, 61%, 55%);
@@ -175,6 +171,7 @@ ion-icon {
 html {
   font-family: Vazir, var(--ff-roboto);
   scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
