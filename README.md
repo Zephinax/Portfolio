@@ -1,6 +1,6 @@
 <h2 align="center">
   Portfolio Website - v1.2<br/>
-  <a href="https://Zephianx.ir/" target="_blank">Zephinax.ir</a>
+  <a href="https://Zephinax.ir/" target="_blank">Zephinax.ir</a>
 </h2>
 <br/>
 <center>
