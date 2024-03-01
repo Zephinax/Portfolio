@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zephianx</title>
+
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favico.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- custom css link -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Vazir font -->
+    <link href="https://v1.fontapi.ir/css/Vazir" rel="stylesheet" />
+  </head>
+
+  <body id="top" class="dark_theme">
+    <!-----Header----->
+
+    <header class="header" data-header>
+      <div class="container">
+        <h1 class="h1 logo">
+          <a href="#">Zephinax<span>.</span></a>
+        </h1>
+
+        <div class="navbar-actions">
+          <!-- <select name="language" id="lang">
+            <option value="en">En</option>
+            <option value="Fa">Fa</option>
+          </select> -->
+
+          <button
+            class="theme-btn"
+            aria-label="Change Theme"
+            title="Change Theme"
+            data-theme-btn
+          >
+            <span class="icon"></span>
+          </button>
+        </div>
+
+        <button
+          class="nav-toggle-btn"
+          aria-label="Toggle Menu"
+          title="Toggle Menu"
+          data-nav-toggle-btn
+          onclick="toggleNav()"
+        >
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
+
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list" dir="rtl">
+            <li>
+              <a
+                href="./index.html#home"
+                class="navbar-link"
+                onclick="toggleNav()"
+                ><ion-icon name="planet-outline"></ion-icon>خانه</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="./index.html#about"
+                class="navbar-link"
+                onclick="toggleNav()"
+                ><ion-icon name="person-outline"></ion-icon>درباره من</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="./index.html#skills"
+                class="navbar-link"
+                onclick="toggleNav()"
+                ><ion-icon name="construct-outline"></ion-icon>مهارت ها</a
+              >
+            </li>
+
+            <li>
+              <a href="./gallery.html" class="navbar-link"
+                ><ion-icon name="images-outline"></ion-icon>گالری پروژه ها</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="./index.html#contact"
+                class="navbar-link"
+                onclick="toggleNav()"
+                ><ion-icon name="call-outline"></ion-icon>ارتباط با من</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="project" id="portfolio">
+      <ul class="project-list">
+        <li>
+          <div class="project-content section-content">
+            <p class="section-subtitle">پروژه های من</p>
+
+            <h2 class="h3 section-title">See My Works Which Will Amaze You!</h2>
+
+            <p class="section-text">
+              We develop the best quality website that serves for the long-term.
+              Well-documented, clean, easy and elegant interface helps any
+              non-technical clients.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <a href="#" class="project-card">
+            <figure class="card-banner">
+              <img
+                src="./assets/images/project-1.png"
+                class="w-100"
+                alt="A macintosh on a yellow background."
+              />
+            </figure>
+
+            <div class="card-content">
+              <h3 class="h4 card-title">Lorem Ipsum Dolor 01</h3>
+
+              <time class="publish-date" datetime="2022-04">April 2022</time>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="project-card">
+            <figure class="card-banner">
+              <img
+                src="./assets/images/project-2.png"
+                class="w-100"
+                alt="On a Blue background, a Wacom and a mouse."
+              />
+            </figure>
+
+            <div class="card-content">
+              <h3 class="h4 card-title">Lorem Ipsum Dolor 02</h3>
+
+              <time class="publish-date" datetime="2022-04">April 2022</time>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="project-card">
+            <figure class="card-banner">
+              <img
+                src="./assets/images/project-3.png"
+                class="w-100"
+                alt="A Cassette tape on a mellow apricot background."
+              />
+            </figure>
+
+            <div class="card-content">
+              <h3 class="h4 card-title">Lorem Ipsum Dolor 03</h3>
+
+              <time class="publish-date" datetime="2022-04">April 2022</time>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="project-card">
+            <figure class="card-banner">
+              <img
+                src="./assets/images/project-4.png"
+                class="w-100"
+                alt="Blue digital watch on a dark liver background."
+              />
+            </figure>
+
+            <div class="card-content">
+              <h3 class="h4 card-title">Lorem Ipsum Dolor 04</h3>
+
+              <time class="publish-date" datetime="2022-04">April 2022</time>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="project-card">
+            <figure class="card-banner">
+              <img
+                src="./assets/images/project-5.png"
+                class="w-100"
+                alt="On a dark liver background, Airport luggage car carrying a luggage."
+              />
+            </figure>
+
+            <div class="card-content">
+              <h3 class="h4 card-title">Lorem Ipsum Dolor 05</h3>
+
+              <time class="publish-date" datetime="2022-04">April 2022</time>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="project-card">
+            <figure class="card-banner">
+              <img
+                src="./assets/images/project-6.png"
+                class="w-100"
+                alt="On a yellow background, a digital watch and a glass."
+              />
+            </figure>
+
+            <div class="card-content">
+              <h3 class="h4 card-title">Lorem Ipsum Dolor 06</h3>
+
+              <time class="publish-date" datetime="2022-04">April 2022</time>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="project-card">
+            <figure class="card-banner">
+              <img
+                src="./assets/images/project-7.png"
+                class="w-100"
+                alt="A fujifilm instant camera on a dark electric blue background."
+              />
+            </figure>
+
+            <div class="card-content">
+              <h3 class="h4 card-title">Lorem Ipsum Dolor 07</h3>
+
+              <time class="publish-date" datetime="2022-04">April 2022</time>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <button class="load-more btn btn-primary">Load more work</button>
+        </li>
+      </ul>
+    </section>
+
+    <!-----Footer----->
+
+    <footer class="footer">
+      <div class="container">
+        <p class="copyright">
+          <a href="https://github.com/Zephinax/Portfolio"
+            >این سایت یه پروژه اوپن سورسه و با کلیک رو این متن میتونید در توسعه
+            اون مشارکت کنید
+          </a>
+        </p>
+
+        <p class="copyright">
+          &copy; 2024
+          <a target="_blank" href="https://github.com/Zephinax">Zephinax</a>.
+          Open Source Software
+        </p>
+      </div>
+    </footer>
+    <script src="./assets/js/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <noscript>Need javascript to run</noscript>
+  </body>
+</html>
