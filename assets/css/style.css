@@ -439,8 +439,7 @@ body.active {
   display: grid;
   place-items: center;
   visibility: hidden;
-  transition: 0.75s cubic-bezier(0.71, 0.01, 0.24, 0.99);
-  transition-delay: 0.5s;
+  transition: 0.5s cubic-bezier(0.71, 0.01, 0.24, 0.99);
   z-index: 1;
 }
 
