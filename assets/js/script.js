@@ -1,33 +1,18 @@
 'use strict';
 
-/**
- * element toggle function
- */
-
 const elemToggleFunc = function (elem) {
   elem.classList.toggle('active');
 };
 
-/**
- * header sticky & go to top
- */
-
 const header = document.querySelector('[data-header]');
-const goTopBtn = document.querySelector('[data-go-top]');
 
 window.addEventListener('scroll', () => {
   if (window.scrollY >= 10) {
     header.classList.add('active');
-    goTopBtn.classList.add('active');
   } else {
     header.classList.remove('active');
-    goTopBtn.classList.remove('active');
   }
 });
-
-/**
- * navbar toggle
- */
 
 const navToggleBtn = document.querySelector('[data-nav-toggle-btn]');
 const navbar = document.querySelector('[data-navbar]');
@@ -37,10 +22,6 @@ function toggleNav() {
   elemToggleFunc(navbar);
   elemToggleFunc(document.body);
 }
-
-/**
- * skills toggle
- */
 
 const toggleBtnBox = document.querySelector('[data-toggle-box]');
 const toggleBtns = document.querySelectorAll('[data-toggle-btn]');
@@ -55,10 +36,6 @@ for (let i = 0; i < toggleBtns.length; i++) {
     elemToggleFunc(skillsBox);
   });
 }
-
-/**
- * dark & light theme toggle
- */
 
 const themeToggleBtn = document.querySelector('[data-theme-btn]');
 
@@ -78,10 +55,6 @@ themeToggleBtn.addEventListener('click', () => {
   }
 });
 
-/**
- * check & apply last time selected theme from localStorage
- */
-
 if (localStorage.getItem('theme') === 'light_theme') {
   themeToggleBtn.classList.add('active');
   document.body.classList.remove('dark_theme');
@@ -92,14 +65,10 @@ if (localStorage.getItem('theme') === 'light_theme') {
   document.body.classList.add('dark_theme');
 }
 
-// Reset Form
-function submitForm() {
-  // Get the first form with the name
-  // Usually the form name is not repeated
-  // but duplicate names are possible in HTML
-  // Therefore to work around the issue, enforce the correct index
-  var frm = document.getElementById('contactForm');
-  frm.submit(); // Submit the form
-  frm.reset(); // Reset all form data
-  return false; // Prevent page refresh
+function subFrm() {
+  const frm = document.getElementById('contactForm');
+  setTimeout(() => {
+    frm.reset();
+    return false;
+  }, 3000);
 }
