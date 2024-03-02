@@ -36,7 +36,7 @@ input[type='number'] {
 
   --transition-1: 0.25s ease-in-out;
 
-  --section-padding: 20px;
+  --section-padding: 50px;
 
   --radius-4: 4px;
   --radius-12: 12px;
@@ -194,6 +194,7 @@ body.active {
 .btn-primary:is(:hover, :focus) {
   background: var(--color-primary);
   color: var(--bg-primary);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .btn-secondary {
@@ -203,7 +204,7 @@ body.active {
 }
 
 .btn-secondary:is(:hover, :focus) {
-  --raw-seinna: hsl(24, 74%, 64%);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .section-subtitle {
@@ -395,7 +396,6 @@ body.active {
 .navbar.active {
   top: 0;
   visibility: visible;
-  transition-delay: 0.5s;
 }
 
 .navbar-list > li {
@@ -473,7 +473,7 @@ main {
 /* ------About------ */
 
 .about {
-  padding-block: var(--section-padding);
+  padding-block: 5px;
 }
 
 .about-banner {
@@ -495,6 +495,7 @@ main {
 
 .skills {
   padding-block: var(--section-padding);
+  padding-top: 80px;
 }
 
 .skills-content {
@@ -660,6 +661,7 @@ main {
 
 .contact {
   padding-block: var(--section-padding);
+  padding-bottom: 80px;
 }
 
 .contact-content {
@@ -774,6 +776,7 @@ textarea.input-field {
   height: 120px;
   max-height: 200px;
   resize: vertical;
+  resize: none;
 }
 
 .input-field:focus {
@@ -921,8 +924,8 @@ textarea.input-field {
   }
 
   .navbar-link {
-    transform: translateY(0);
-    font-size: unset;
+    transform: translateY(0) !important;
+    font-size: unset !important;
     padding-inline: 5px;
   }
 
