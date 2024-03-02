@@ -8,9 +8,7 @@ input[type='number'] {
 }
 
 :root {
-  --raw-seinna: hsl(342, 61%, 55%);
-  --sizzling-sunrise: hsl(342, 61%, 55%);
-  --scarlet: hsl(342, 61%, 55%);
+  --main-color: hsl(342, 61%, 55%);
   --black: hsl(0, 0%, 0%);
   --white: hsl(0, 0%, 100%);
 
@@ -193,13 +191,14 @@ body.active {
 }
 
 .btn-secondary {
-  background: var(--raw-seinna);
-  border-color: var(--raw-seinna);
-  color: var(--black);
+  background: var(--main-color);
+  border-color: var(--main-color);
+  color: var(--bg-primary);
 }
 
 .btn-secondary:is(:hover, :focus) {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background: var(--bg-primary);
+  color: var(--main-color);
 }
 
 .section-subtitle {
@@ -234,7 +233,7 @@ body.active {
 .tooltip {
   position: absolute;
   top: -40px;
-  background: var(--raw-seinna);
+  background: var(--main-color);
   min-width: max-content;
   color: var(--white);
   font-size: 15px;
@@ -287,7 +286,7 @@ body.active {
 
 .logo span {
   display: inline-block;
-  color: var(--raw-seinna);
+  color: var(--main-color);
   margin-left: 2px;
 }
 
@@ -332,7 +331,7 @@ body.active {
 
 .theme-btn.active .icon {
   left: 20px;
-  box-shadow: inset 20px -20px var(--sizzling-sunrise);
+  box-shadow: inset 20px -20px var(--main-color);
 }
 
 .nav-toggle-btn {
@@ -424,7 +423,7 @@ body.active {
 }
 
 .navbar-link:is(:hover, :focus) {
-  color: var(--raw-seinna);
+  color: var(--main-color);
 }
 
 /* ------Hero------ */
@@ -517,7 +516,7 @@ main {
   left: 5px;
   bottom: 5px;
   width: 93px;
-  background: var(--raw-seinna);
+  background: var(--main-color);
   border-radius: 100px;
   transition: var(--transition-1);
   z-index: -1;
@@ -647,7 +646,7 @@ main {
 
 .load-more {
   font-size: var(--fs-4);
-  color: var(--raw-seinna);
+  color: var(--main-color);
   /* text-decoration: underline; */
   margin-inline: auto;
 }
@@ -716,7 +715,7 @@ main {
 }
 
 .contact-social-link:is(:hover, :focus) {
-  background: var(--raw-seinna);
+  background: var(--main-color);
   color: var(--white);
 }
 
@@ -750,7 +749,7 @@ main {
 
 .input-field {
   background: var(--input-bg);
-  color: var(--raw-seinna);
+  color: var(--main-color);
   padding: 10px;
   padding-left: 40px;
   border-radius: var(--radius-12);
@@ -779,7 +778,7 @@ textarea.input-field {
 }
 
 .input-field:focus + ion-icon {
-  color: var(--raw-seinna);
+  color: var(--main-color);
 }
 
 .contact .btn-primary {
@@ -809,7 +808,11 @@ textarea.input-field {
 
 .copyright a {
   display: inline-block;
-  color: var(--raw-seinna);
+  color: var(--main-color);
+}
+
+.copyright a:hover {
+  text-decoration: underline;
 }
 
 @media (min-width: 550px) {
@@ -1103,10 +1106,6 @@ textarea.input-field {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-
-  .footer .logo {
-    margin-bottom: 0;
   }
 }
 
