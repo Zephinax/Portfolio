@@ -220,7 +220,6 @@ body.active {
 }
 
 .section-title {
-  max-width: 350px;
   margin-bottom: 30px;
 }
 
@@ -693,37 +692,6 @@ main {
   color: var(--color-primary);
 }
 
-.contac-social-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 15px;
-  padding-inline: 40px;
-}
-
-.contact-social-link {
-  position: relative;
-  background: var(--color-primary);
-  color: var(--bg-primary);
-  width: 35px;
-  height: 35px;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  transition: var(--transition-1);
-}
-
-.contact-social-link:is(:hover, :focus) {
-  background: var(--main-color);
-  color: var(--white);
-}
-
-.contact-social-link:is(:hover, :focus) .tooltip {
-  transform: translateY(0);
-  opacity: 1;
-}
-
 .contact-form {
   background: var(--bg-secondary);
   padding: 20px;
@@ -816,13 +784,14 @@ textarea.input-field {
 }
 
 @media (min-width: 550px) {
+  .contact-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
   .container {
     max-width: 550px;
     margin-inline: auto;
-  }
-
-  .section-title {
-    max-width: 380px;
   }
 
   .project-list {
@@ -838,10 +807,6 @@ textarea.input-field {
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
-  }
-
-  .section-title {
-    max-width: 430px;
   }
 
   .stats-list {
@@ -1112,10 +1077,6 @@ textarea.input-field {
 @media (min-width: 1200px) {
   .container {
     max-width: 1150px;
-  }
-
-  .section-title {
-    max-width: 460px;
   }
 
   .hero-social-list {
