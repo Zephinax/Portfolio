@@ -4,8 +4,7 @@
 </h2>
 <br/>
 <div style="display: flex"><img src="./demo/darkDemo.png" alt="Dark Demo Image" width="50%" height="100%" style="vertical-align:middle; display: inline-block;">
-<img src="./demo/lightDemo.png
-" alt="Dark Demo Image" width="50%" height="100%" style="vertical-align:middle"></div>
+<img src="./demo/lightDemo.png" alt="Light Demo Image" width="50%" height="100%" style="vertical-align:middle"></div>
 <br/>
 <div style="display : flex; align-items: center; justify-content: center;" align="center">
 
