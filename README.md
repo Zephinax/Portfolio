@@ -24,11 +24,11 @@ You can fork this repo to modify and make changes of your own. Please give me pr
 
 ## Features
 
--📖 Multi-Page Layout
-
 -📱 Fully Responsive
 
--🔅 Dark & Light Mode 
+-📖 Multi-Page Layout
+
+-🔅 Dark & Light Mode
 
 Give a ⭐ if you like this website!
 
@@ -36,4 +36,4 @@ Give a ⭐ if you like this website!
 
 - [@Zephinax](https://github.com/Zephinax)
 
-[GPL-V3.0](LICENSE)
+LICENSE : [GPL-V3.0](LICENSE)
