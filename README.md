@@ -3,7 +3,7 @@
   <a href="https://Zephinax.ir/" target="_blank">Click Here To Show Demo [Zephinax.ir]</a>
 </h2>
 <br/>
-<div style="display : flex; align-items: center; justify-content: center;"><img src="./demo/darkDemo.png" alt="Dark Demo Image" width="45%" height="100%" style="vertical-align:middle; display: inline-block;">
+<div align="center" style="display : flex; align-items: center; justify-content: center;"><img src="./demo/darkDemo.png" alt="Dark Demo Image" width="45%" height="100%" style="vertical-align:middle; display: inline-block;">
 <img src="./demo/lightDemo.png" alt="Light Demo Image" width="45%" height="100%" style="vertical-align:middle"></div>
 <br/>
 <div style="display : flex; align-items: center; justify-content: center;" align="center">
