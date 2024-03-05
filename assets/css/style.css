@@ -602,8 +602,7 @@ main {
 }
 
 .project-card:is(:hover, :focus)::after {
-  background: hsla(0, 0%, 100%, 0.1);
-  backdrop-filter: blur(0.5px);
+  background: hsla(0, 0%, 0%, 0.2);
 }
 
 .project-card .card-content {
@@ -625,6 +624,7 @@ main {
   box-shadow: var(--shadow-1);
   transform: translateY(20px);
   opacity: 0;
+  border-radius: 10px;
   transition: var(--transition-1);
 }
 
