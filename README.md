@@ -3,13 +3,17 @@
   <a href="https://Zephinax.ir/" target="_blank">Click Here To Show Demo [Zephinax.ir]</a>
 </h2>
 <br/>
-<center align="center">
+<div style="display: flex"><img src="./demo/darkDemo.png" alt="Dark Demo Image" width="50%" height="100%" style="vertical-align:middle; display: inline-block;">
+<img src="./demo/lightDemo.png
+" alt="Dark Demo Image" width="50%" height="100%" style="vertical-align:middle"></div>
+<br/>
+<div style="display : flex; align-items: center; justify-content: center;" align="center">
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) &nbsp;
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com) &nbsp;
 [![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com) &nbsp;
 
-</center>
+</div>
 
 <h3 align="center">
     🔹
@@ -35,5 +39,3 @@ Give a ⭐ if you like this website!
 ## Authors
 
 - [@Zephinax](https://github.com/Zephinax)
-
-LICENSE : [GPL-V3.0](LICENSE)
