@@ -27,11 +27,11 @@ You can fork this repo to modify and make changes of your own. Please give me pr
 
 ## Features
 
--📱 Fully Responsive
+- 📱 Fully Responsive
 
--📖 Multi-Page Layout
+- 📖 Multi-Page Layout
 
--🔅 Dark & Light Mode
+- 🔅 Dark & Light Mode
 
 Give a ⭐ if you like this website!
 
