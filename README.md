@@ -40,7 +40,7 @@ and enter your email to generate your access key, then search for [ hidden ] in 
 
 - 💄 Fully Customizable
 
-Give a ⭐ if you like this website!
+Give a ⭐ if you like this project!
 
 ## Authors
 
