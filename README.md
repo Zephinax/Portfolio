@@ -46,4 +46,4 @@ Give a ⭐ if you like this project!
 
 - [@Zephinax](https://github.com/Zephinax)
 
-  Please give me proper credit by linking back to [Zephianx](https://github.com/Zephinax). Thanks!
+  Please give me proper credit by linking back to [Me](https://github.com/Zephinax), Thanks!
