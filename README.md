@@ -23,20 +23,27 @@
 
 ## How to use?
 
-You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [Zephianx](https://github.com/Zephinax/Portfolio). Thanks!
+1 - Fork this repo to modify and make changes of your own.
+
+2 - To active form, go to [Web3forms](https://web3forms.com) and click on [ Create Your Access Key ]
+and enter your email to generate your access key, then search for [ hidden ] in index.html and change vaule with your access key
 
 ## Features
 
 - 📱 Fully Responsive
 
+- 🖇️ Working Contact Form
+
 - 📖 Multi-Page Layout
 
 - 🔅 Dark & Light Mode
-  
-- 💄 Fully Customizable 
+
+- 💄 Fully Customizable
 
 Give a ⭐ if you like this website!
 
 ## Authors
 
 - [@Zephinax](https://github.com/Zephinax)
+
+  Please give me proper credit by linking back to [Zephianx](https://github.com/Zephinax). Thanks!
