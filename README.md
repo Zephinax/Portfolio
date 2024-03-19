@@ -28,6 +28,8 @@
 2 - To active form, go to [Web3forms](https://web3forms.com) and click on [ Create Your Access Key ]
 and enter your email to generate your access key, then search for [ hidden ] in index.html and change vaule with your access key
 
+3 - You can use github pages to host this website
+
 ## Features
 
 - 📱 Fully Responsive
