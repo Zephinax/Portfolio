@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zephinax | Home</title>
+    <title>Zephinax</title>
     <!-- favicon -->
     <link
       rel="shortcut icon"
@@ -33,10 +33,28 @@
           <a href="#">Zephinax<span>.</span></a>
         </h1>
         <div class="navbar-actions">
-          <select name="language" id="lang">
-            <option value="en">En</option>
-            <option value="Fa">Fa</option>
-          </select>
+          <div class="language-selector" name="language" id="lang">
+            <svg
+              class="language-icon"
+              fill="none"
+              stroke-width="1.5"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              dataSlot="icon"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802"
+              ></path>
+            </svg>
+            <ul id="languageOptions" class="language-options">
+              <li onclick="toggleLanguage('Fa')">فارسی</li>
+              <li onclick="toggleLanguage('En')">English</li>
+              <li onclick="toggleLanguage('Ger')">Deutsch</li>
+            </ul>
+          </div>
           <button
             class="theme-btn"
             aria-label="Change Theme"
@@ -60,28 +78,33 @@
         <nav class="navbar" data-navbar>
           <ul class="navbar-list" dir="rtl">
             <li>
-              <a href="#home" class="navbar-link" onclick="toggleNav()"
-                ><ion-icon name="planet-outline"></ion-icon>خانه</a
+              <a href="#home" class="navbar-link" onclick="toggleNav()">
+                <ion-icon name="planet-outline"></ion-icon>
+                <span id="navHome">خانه</span></a
               >
             </li>
             <li>
               <a href="#about" class="navbar-link" onclick="toggleNav()"
-                ><ion-icon name="person-outline"></ion-icon>درباره من</a
+                ><ion-icon name="person-outline"></ion-icon>
+                <span id="navAboutMe">درباره من</span></a
               >
             </li>
             <li>
               <a href="#skills" class="navbar-link" onclick="toggleNav()"
-                ><ion-icon name="construct-outline"></ion-icon>مهارت ها</a
+                ><ion-icon name="construct-outline"></ion-icon>
+                <span id="navSkills">مهارت ها</span></a
               >
             </li>
             <li>
               <a href="./gallery.html" class="navbar-link"
-                ><ion-icon name="images-outline"></ion-icon>گالری پروژه ها</a
+                ><ion-icon name="images-outline"></ion-icon
+                ><span id="navGallery">گالری پروژه ها</span></a
               >
             </li>
             <li>
               <a href="#contact" class="navbar-link" onclick="toggleNav()"
-                ><ion-icon name="call-outline"></ion-icon>ارتباط با من</a
+                ><ion-icon name="call-outline"></ion-icon
+                ><span id="navContact">ارتباط با من</span></a
               >
             </li>
           </ul>
@@ -110,10 +133,13 @@
             </picture>
           </figure>
           <div class="hero-content">
-            <h2 class="h2 hero-title">جایی که داستان من شروع شد</h2>
+            <h2 id="homeContent" class="h2 hero-title">
+              جایی که داستان من شروع شد
+            </h2>
 
             <a href="#contact" class="btn btn-primary" dir="rtl"
-              ><i class="bx bx-phone-call bx-tada"></i> ارتباط با من</a
+              ><i class="bx bx-phone-call bx-tada"></i>
+              <span id="homeBtn">ارتباط با من</span></a
             >
           </div>
           <ul class="hero-social-list">
@@ -123,13 +149,13 @@
                 class="hero-social-link"
               >
                 <i class="bx bxl-instagram-alt"></i>
-                <div class="tooltip">اینستاگرام</div>
+                <div id="instaToolTip" class="tooltip">اینستاگرام</div>
               </a>
             </li>
             <li>
               <a href="https://t.me/Zephinax" class="hero-social-link">
                 <i class="bx bxl-telegram"></i>
-                <div class="tooltip">تلگرام</div>
+                <div id="teleToolTip" class="tooltip">تلگرام</div>
               </a>
             </li>
             <li>
@@ -138,7 +164,7 @@
                 class="hero-social-link"
               >
                 <ion-icon name="logo-linkedin"></ion-icon>
-                <div class="tooltip">لینکدین</div>
+                <div id="linkedToolTip" class="tooltip">لینکدین</div>
               </a>
             </li>
           </ul>
@@ -156,9 +182,11 @@
             />
           </figure>
           <div class="about-content section-content" dir="rtl">
-            <p class="section-subtitle">درباره من</p>
-            <h2 class="h3 section-title">با من بیشتر آشنا شو...</h2>
-            <p class="section-text">
+            <p id="aboutSubTitle" class="section-subtitle">درباره من</p>
+            <h2 id="aboutTitle" class="h3 section-title">
+              با من بیشتر آشنا شو...
+            </h2>
+            <p id="aboutContent" class="section-text">
               امیرعلی هستم. یک گیک، وب دولوپر، علاقه مند به لینوکس و نرم افزار
               آزاد، برنامه نویس سخت افزار و نرم افزار و عاشق یادگیری و به اشتراک
               گذاشتن چیز‌ها. همچنین فعال در حوزه [ دیزاین UI & UX ،هوش مصنوعی
@@ -178,9 +206,14 @@
                 style="text-align: center; margin-bottom: 20px"
                 class="btn btn-secondary"
                 href="./gallery.html"
+                id="galleryBtn"
                 >گالری پروژه ها</a
               >
-              <button style="margin-bottom: 20px" class="btn btn-primary">
+              <button
+                id="downloadCvBtn"
+                style="margin-bottom: 20px"
+                class="btn btn-primary"
+              >
                 دانلود رزومه
               </button>
             </div>
@@ -189,18 +222,20 @@
         <!-----Skills----->
         <section class="skills" id="skills">
           <div class="skills-content section-content" dir="rtl">
-            <p class="section-subtitle">مهارت های من</p>
-            <h2 class="h3 section-title">مهارت های من شامل چه چیزایی میشه؟</h2>
-            <p class="section-text">
+            <p id="skillsSubTitle" class="section-subtitle">مهارت های من</p>
+            <h2 id="skillsTitle" class="h3 section-title">
+              مهارت های من شامل چه چیزایی میشه؟
+            </h2>
+            <p id="skillsContent" class="section-text">
               برای اینکه بتونم ایده های توی ذهنم رو به واقعیت تبدیل کنم باید
               چیزهای مختلف زیادی یاد میگرفتم که هنوزم تموم نشده و ادامه داره :)
             </p>
-            <div class="skills-toggle" data-toggle-box>
+            <div id="skillsToogle" class="skills-toggle" data-toggle-box>
               <button class="toggle-btn active" data-toggle-btn>
-                <p style="margin-left: 7px">ابزار ها</p>
+                <p id="skillsTool" style="margin-left: 7px">ابزار ها</p>
               </button>
               <button class="toggle-btn" data-toggle-btn>
-                <p style="margin-left: -7px">مهارت ها</p>
+                <p id="skillsSkill" style="margin-left: -7px">مهارت ها</p>
               </button>
             </div>
           </div>
@@ -397,20 +432,22 @@
         <!-----Contact----->
         <section class="contact" id="contact" dir="rtl">
           <div class="contact-content section-content">
-            <p class="section-subtitle">ارتباط با من</p>
-            <h2 class="h3 section-title">میخوای باهام صحبت کنی؟</h2>
-            <p class="section-text">
+            <p id="contactSubTitle" class="section-subtitle">ارتباط با من</p>
+            <h2 id="contactTitle" class="h3 section-title">
+              میخوای باهام صحبت کنی؟
+            </h2>
+            <p id="contactContent" class="section-text">
               اگه فکر میکنی پروژه ای تو ذهنت داری که ممکنه ازش خوشم بیاد یا
-              باهام کاری داشتی فقط کافیه فرم و پر کنی تا باهام صحبت کنی یا
-              میتونی تو یکی از شبکه های اجتماعی پیام بدی.
+              باهام کاری داشتی فقط کافیه فرمو پر کنی تا باهام صحبت کنی یا میتونی
+              تو یکی از شبکه های اجتماعی پیام بدی.
             </p>
-            <ul class="contact-list">
+            <ul id="contactList" class="contact-list">
               <li class="contact-list-item">
                 <div class="contact-item-icon">
                   <i class="bx bxs-envelope"></i>
                 </div>
                 <div class="wrapper">
-                  <h3 class="h4 contact-item-title">ایمیل :</h3>
+                  <h3 id="email" class="h4 contact-item-title">ایمیل</h3>
                   <a href="mailto: zephinax@gmail.com" class="contact-info"
                     >Zephinax@gmail.com</a
                   >
@@ -421,7 +458,7 @@
                   <i class="bx bxl-linkedin-square"></i>
                 </div>
                 <div class="wrapper">
-                  <h3 class="h4 contact-item-title">لینکدین :</h3>
+                  <h3 id="linkedin" class="h4 contact-item-title">لینکدین</h3>
                   <a
                     href="https://www.linkedin.com/in/zephinax?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                     target="_blank"
@@ -435,8 +472,16 @@
                   <i class="bx bx-link"></i>
                 </div>
                 <div class="wrapper">
-                  <h3 class="h4 contact-item-title">تلگرام و اینستاگرام :</h3>
-                  <a class="contact-info" dir="ltr">@Zephinax</a>
+                  <h3 id="telins" class="h4 contact-item-title">
+                    تلگرام & اینستاگرام
+                  </h3>
+                  <a
+                    href="https://t.me/Zephinax"
+                    target="_blank"
+                    class="contact-info"
+                    dir="ltr"
+                    >@Zephinax</a
+                  >
                 </div>
               </li>
               <li class="contact-list-item">
@@ -444,7 +489,7 @@
                   <i class="bx bxl-github"></i>
                 </div>
                 <div class="wrapper">
-                  <h3 class="h4 contact-item-title">گیت هاب :</h3>
+                  <h3 id="github" class="h4 contact-item-title">گیت هاب</h3>
                   <a
                     href="https://github.com/Zephinax"
                     class="contact-info"
@@ -467,7 +512,9 @@
               value="197dc552-7039-4771-a21d-2ca63fda926c"
             />
             <div class="form-wrapper">
-              <label for="name" class="form-label">نام و نام حانوادگی</label>
+              <label id="formNameLastName" for="name" class="form-label"
+                >نام و نام حانوادگی</label
+              >
               <div class="input-wrapper">
                 <input
                   type="text"
@@ -481,7 +528,7 @@
               </div>
             </div>
             <div class="form-wrapper">
-              <label for="email" class="form-label">ایمیل</label>
+              <label id="formEmail" for="email" class="form-label">ایمیل</label>
               <div class="input-wrapper">
                 <input
                   type="email"
@@ -495,7 +542,9 @@
               </div>
             </div>
             <div class="form-wrapper">
-              <label for="phone" class="form-label">شماره تماس</label>
+              <label id="formNumber" for="phone" class="form-label"
+                >شماره تماس</label
+              >
               <div class="input-wrapper">
                 <input
                   type="number"
@@ -509,7 +558,9 @@
               </div>
             </div>
             <div class="form-wrapper">
-              <label for="message" class="form-label">متن پیام</label>
+              <label id="formMassage" for="message" class="form-label"
+                >متن پیام</label
+              >
               <div class="input-wrapper">
                 <textarea
                   name="message"
@@ -537,7 +588,7 @@
     <footer class="footer">
       <div class="container">
         <p class="copyright">
-          <a href="https://github.com/Zephinax/Portfolio"
+          <a id="footerContent" href="https://github.com/Zephinax/Portfolio"
             >با کلیک بر روی این متن میتونید در توسعه این وبسایت مشارکت کنید
           </a>
         </p>
