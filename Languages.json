@@ -27,6 +27,7 @@
     "phoneNumberPlaceHolder": "09123456789",
     "message": "متن پیام",
     "messagePlaceHolder": "هنوز که چیزی ننوشتی...",
+    "sendMsg": "ارسال پیام",
     "footerContent": "با کلیک بر روی این متن میتونید در توسعه این وبسایت مشارکت کنید"
   },
   "En": {
@@ -58,6 +59,7 @@
     "phoneNumberPlaceHolder": "09123456789",
     "message": "Message",
     "messagePlaceHolder": "You haven't written anything yet...",
+    "sendMsg": "Send message",
     "footerContent": "By clicking on this text, you can participate in the development of this website"
   },
   "Ger": {
@@ -88,6 +90,7 @@
     "phoneNumberPlaceHolder": "09123456789",
     "message": "Nachricht",
     "messagePlaceHolder": "Du hast noch nichts geschrieben...",
+    "sendMsg": "Nachricht senden",
     "footerContent": "Durch Klicken auf diesen Text können Sie sich an der Entwicklung dieser Website beteiligen"
   }
 }

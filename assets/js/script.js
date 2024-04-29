@@ -69,6 +69,7 @@ const languageOptions = selectElement('languageOptions');
 const languageSelector = selectElement('lang');
 const navList = selectElement('navList');
 const body = selectElement('body');
+const formSubmitBtn = selectElement('subBtn');
 const directionNeeded = [
   homeBtn,
   aboutTitle,
@@ -130,6 +131,7 @@ const toggleLanguage = (language) => {
       formMassage.innerHTML = data.Fa.message;
       formMessageInput.placeholder = data.Fa.messagePlaceHolder;
       footerContent.innerHTML = data.Fa.footerContent;
+      formSubmitBtn.innerHTML = data.Fa.sendMsg;
     } else if (language == 'En') {
       directionNeeded.map((elem) => {
         elem.style.direction = 'ltr';
@@ -139,6 +141,7 @@ const toggleLanguage = (language) => {
       homeBtn.parentElement.style.paddingBottom = '6px';
       galleryBtn.style.paddingBottom = '6px';
       downloadCvBtn.style.paddingBottom = '6px';
+      formSubmitBtn.style.paddingBottom = '6px';
       skillsToggle.classList.remove('skill-toggle-germany');
       skillsToggle.classList.add('skill-toggle-english');
       navHome.innerHTML = data.En.home;
@@ -176,6 +179,7 @@ const toggleLanguage = (language) => {
       formMassage.innerHTML = data.En.message;
       formMessageInput.placeholder = data.En.messagePlaceHolder;
       footerContent.innerHTML = data.En.footerContent;
+      formSubmitBtn.innerHTML = data.En.sendMsg;
     } else if (language == 'Ger') {
       directionNeeded.map((elem) => {
         elem.style.direction = 'ltr';
@@ -185,6 +189,7 @@ const toggleLanguage = (language) => {
       homeBtn.parentElement.style.paddingBottom = '6px';
       galleryBtn.style.paddingBottom = '6px';
       downloadCvBtn.style.paddingBottom = '6px';
+      formSubmitBtn.style.paddingBottom = '6px';
       skillsToggle.classList.remove('skill-toggle-germany');
       skillsToggle.classList.add('skill-toggle-germany');
       navHome.innerHTML = data.Ger.home;
@@ -222,6 +227,7 @@ const toggleLanguage = (language) => {
       formMassage.innerHTML = data.Ger.message;
       formMessageInput.placeholder = data.Ger.messagePlaceHolder;
       footerContent.innerHTML = data.Ger.footerContent;
+      formSubmitBtn.innerHTML = data.Ger.sendMsg;
     }
   });
 };
