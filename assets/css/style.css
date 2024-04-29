@@ -330,9 +330,6 @@ body.active {
   padding-top: 8px;
   margin-top: -10px;
   text-align: center;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
   left: -24px;
   transition: var(--transition-1);
 }
@@ -360,6 +357,12 @@ body.active {
   cursor: pointer;
   transition: all 0.15s linear;
   animation: scale-up-ver-top 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari, Chrome, Opera, Samsung */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Edge, IE */
+  user-select: none; /* Modern browsers */
 }
 
 .language-selector:hover + .language-options {

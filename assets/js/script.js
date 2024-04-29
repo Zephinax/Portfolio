@@ -82,22 +82,8 @@ const directionNeeded = [
   navList,
 ];
 
-languageSelector.addEventListener('mouseenter', function () {
-  languageOptions.style.display = 'block';
-});
-languageSelector.addEventListener('mouseleave', function () {
-  languageOptions.style.display = 'none';
-});
-languageSelector.addEventListener('focus', function () {
-  languageOptions.style.display = 'block';
-});
-languageSelector.addEventListener('blur', function () {
-  languageOptions.style.display = 'none';
-});
-
 const toggleLanguage = (language) => {
   const data = fetchData().then((data) => {
-    languageOptions.style.display = 'none';
     if (language == 'Fa') {
       directionNeeded.map((elem) => {
         elem.style.direction = 'rtl';
