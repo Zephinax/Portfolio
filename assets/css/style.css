@@ -2,6 +2,11 @@
   font-family: Vazir;
   src: url(./../font/Vazir-Regular.ttf);
 }
+
+@font-face {
+  font-family: Ger;
+  src: url(./../font/MmSchuldruck-R9av.ttf);
+}
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -151,7 +156,7 @@ body.active {
 .h3,
 .h4 {
   color: var(--color-primary);
-  font-family: Vazir, var(--ff-roboto);
+  font-family: inherit;
   line-height: 1.2;
 }
 
@@ -185,6 +190,11 @@ body.active {
   border: 1px solid transparent;
   border-radius: var(--radius-12);
   transition: var(--transition-1);
+}
+
+.bx-phone-call {
+  font-size: 24px;
+  margin-bottom: 4px;
 }
 
 .btn-primary {
@@ -320,7 +330,11 @@ body.active {
   padding-top: 8px;
   margin-top: -10px;
   text-align: center;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   left: -24px;
+  transition: var(--transition-1);
 }
 
 .language-options-active {
@@ -482,7 +496,7 @@ body.active {
   width: max-content;
   margin-inline: auto;
   color: var(--color-primary);
-  font-family: Vazir, var(--ff-poppins);
+  font-family: inherit;
   font-size: var(--fs-1);
   padding: 10px;
   display: flex;
@@ -602,17 +616,24 @@ main {
 }
 
 .skill-toggle-english.active::before {
-  left: 87px;
+  left: 89px;
 }
 
+.skill-toggle-english::before {
+  width: 75px;
+}
 .skill-toggle-germany.active::before {
   width: 110px;
   left: 148px;
 }
 
+.skill-toggle-germany::before {
+  width: 120px;
+}
+
 .toggle-btn {
   color: var(--color-primary);
-  font-family: Vazir, var(--ff-poppins);
+  font-family: inherit;
   padding: 5px 25px;
   display: flex;
   align-items: center;
@@ -795,7 +816,7 @@ main {
 .form-label {
   color: var(--color-primary);
   font-size: var(--fs-7);
-  font-family: Vazir, var(--ff-poppins);
+  font-family: inherit;
   margin-bottom: 8px;
   margin-left: 5px;
 }

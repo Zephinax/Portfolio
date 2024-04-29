@@ -25,7 +25,7 @@
       rel="stylesheet"
     />
   </head>
-  <body id="top" class="dark_theme">
+  <body id="body" class="dark_theme">
     <!-----Header----->
     <header class="header" data-header>
       <div class="container">
@@ -50,9 +50,15 @@
               ></path>
             </svg>
             <ul id="languageOptions" class="language-options">
-              <li onclick="toggleLanguage('Fa')">فارسی</li>
-              <li onclick="toggleLanguage('En')">English</li>
-              <li onclick="toggleLanguage('Ger')">Deutsch</li>
+              <li style="font-family: Vazir" onclick="toggleLanguage('Fa')">
+                فارسی
+              </li>
+              <li style="font-family: Ger" onclick="toggleLanguage('En')">
+                English
+              </li>
+              <li style="font-family: Ger" onclick="toggleLanguage('Ger')">
+                Deutsch
+              </li>
             </ul>
           </div>
           <button
@@ -76,7 +82,7 @@
           <span class="three"></span>
         </button>
         <nav class="navbar" data-navbar>
-          <ul class="navbar-list" dir="rtl">
+          <ul class="navbar-list" id="navList" dir="rtl">
             <li>
               <a href="#home" class="navbar-link" onclick="toggleNav()">
                 <ion-icon name="planet-outline"></ion-icon>
@@ -137,10 +143,10 @@
               جایی که داستان من شروع شد
             </h2>
 
-            <a href="#contact" class="btn btn-primary" dir="rtl"
-              ><i class="bx bx-phone-call bx-tada"></i>
-              <span id="homeBtn">ارتباط با من</span></a
-            >
+            <a href="#contact" class="btn btn-primary" dir="rtl">
+              <span id="homeBtn">ارتباط با من</span>
+              <i class="bx bx-phone-call bx-tada"></i>
+            </a>
           </div>
           <ul class="hero-social-list">
             <li>
@@ -235,7 +241,13 @@
                 <p id="skillsTool" style="margin-left: 7px">ابزار ها</p>
               </button>
               <button class="toggle-btn" data-toggle-btn>
-                <p id="skillsSkill" style="margin-left: -7px">مهارت ها</p>
+                <p
+                  class="german-fix"
+                  id="skillsSkill"
+                  style="margin-left: -7px"
+                >
+                  مهارت ها
+                </p>
               </button>
             </div>
           </div>

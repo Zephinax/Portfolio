@@ -65,12 +65,11 @@ const formNumber = selectElement('formNumber');
 const formMassage = selectElement('formMassage');
 const formMessageInput = selectElement('message');
 const footerContent = selectElement('footerContent');
+const languageOptions = selectElement('languageOptions');
+const languageSelector = selectElement('lang');
+const navList = selectElement('navList');
+const body = selectElement('body');
 const directionNeeded = [
-  navHome,
-  navAboutMe,
-  navSkills,
-  navGallery,
-  navContact,
   homeBtn,
   aboutTitle,
   aboutContent,
@@ -80,15 +79,31 @@ const directionNeeded = [
   contactContent,
   contactList,
   contactForm,
+  navList,
 ];
+
+languageSelector.addEventListener('mouseenter', function () {
+  languageOptions.style.display = 'block';
+});
+languageSelector.addEventListener('mouseleave', function () {
+  languageOptions.style.display = 'none';
+});
+languageSelector.addEventListener('focus', function () {
+  languageOptions.style.display = 'block';
+});
+languageSelector.addEventListener('blur', function () {
+  languageOptions.style.display = 'none';
+});
 
 const toggleLanguage = (language) => {
   const data = fetchData().then((data) => {
+    languageOptions.style.display = 'none';
     if (language == 'Fa') {
       directionNeeded.map((elem) => {
         elem.style.direction = 'rtl';
         elem.parentElement.style.flexDirection = 'row';
       });
+      body.style.fontFamily = 'Vazir';
       homeBtn.parentElement.style.paddingBottom = '8px';
       galleryBtn.style.paddingBottom = '8px';
       downloadCvBtn.style.paddingBottom = '8px';
@@ -134,6 +149,7 @@ const toggleLanguage = (language) => {
         elem.style.direction = 'ltr';
         elem.parentElement.style.flexDirection = 'row-reverse';
       });
+      body.style.fontFamily = 'Ger';
       homeBtn.parentElement.style.paddingBottom = '6px';
       galleryBtn.style.paddingBottom = '6px';
       downloadCvBtn.style.paddingBottom = '6px';
@@ -179,6 +195,7 @@ const toggleLanguage = (language) => {
         elem.style.direction = 'ltr';
         elem.parentElement.style.flexDirection = 'row-reverse';
       });
+      body.style.fontFamily = 'Ger';
       homeBtn.parentElement.style.paddingBottom = '6px';
       galleryBtn.style.paddingBottom = '6px';
       downloadCvBtn.style.paddingBottom = '6px';
@@ -223,17 +240,13 @@ const toggleLanguage = (language) => {
   });
 };
 
-toggleLanguage('Fa');
-
 window.addEventListener('scroll', () => {
   if (window.scrollY >= 10) {
     header.classList.add('active');
-    selectElement('languageOptions').classList.add('language-options-active');
+    languageOptions.classList.add('language-options-active');
   } else {
     header.classList.remove('active');
-    selectElement('languageOptions').classList.remove(
-      'language-options-active'
-    );
+    languageOptions.classList.remove('language-options-active');
   }
 });
 
