@@ -2,11 +2,6 @@
   font-family: Vazir;
   src: url(./../font/Vazir-Regular.ttf);
 }
-
-@font-face {
-  font-family: Ger;
-  src: url(./../font/MmSchuldruck-R9av.ttf);
-}
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;

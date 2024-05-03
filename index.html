@@ -12,11 +12,18 @@
       type="image/x-icon"
     />
     <link
+      rel="preload"
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
     />
     <!-- custom css link -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="preload"
+      href="./assets/css/style.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
     <!-- google font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -53,10 +60,10 @@
               <li style="font-family: Vazir" onclick="toggleLanguage('Fa')">
                 فارسی
               </li>
-              <li style="font-family: Ger" onclick="toggleLanguage('En')">
+              <li style="font-family: roboto" onclick="toggleLanguage('En')">
                 English
               </li>
-              <li style="font-family: Ger" onclick="toggleLanguage('Ger')">
+              <li style="font-family: roboto" onclick="toggleLanguage('Ger')">
                 Deutsch
               </li>
             </ul>
@@ -215,13 +222,14 @@
                 id="galleryBtn"
                 >گالری پروژه ها</a
               >
-              <button
+              <a
                 id="downloadCvBtn"
+                href="./cv/index.html"
                 style="margin-bottom: 20px"
                 class="btn btn-primary"
               >
                 دانلود رزومه
-              </button>
+              </a>
             </div>
           </div>
         </section>

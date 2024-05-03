@@ -137,7 +137,7 @@ const toggleLanguage = (language) => {
         elem.style.direction = 'ltr';
         elem.parentElement.style.flexDirection = 'row-reverse';
       });
-      body.style.fontFamily = 'Ger';
+      body.style.fontFamily = 'roboto';
       homeBtn.parentElement.style.paddingBottom = '6px';
       galleryBtn.style.paddingBottom = '6px';
       downloadCvBtn.style.paddingBottom = '6px';
@@ -185,7 +185,7 @@ const toggleLanguage = (language) => {
         elem.style.direction = 'ltr';
         elem.parentElement.style.flexDirection = 'row-reverse';
       });
-      body.style.fontFamily = 'Ger';
+      body.style.fontFamily = 'roboto';
       homeBtn.parentElement.style.paddingBottom = '6px';
       galleryBtn.style.paddingBottom = '6px';
       downloadCvBtn.style.paddingBottom = '6px';
