@@ -348,16 +348,16 @@ body.active {
 }
 
 .language-options li {
-  padding: 4px 8px;
+  padding: 0px 10px 14px 10px;
   cursor: pointer;
   transition: all 0.15s linear;
   animation: scale-up-ver-top 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Safari, Chrome, Opera, Samsung */
-  -khtml-user-select: none; /* Konqueror HTML */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Edge, IE */
-  user-select: none; /* Modern browsers */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .language-selector:hover + .language-options {
