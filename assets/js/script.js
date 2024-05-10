@@ -96,6 +96,7 @@ const toggleLanguage = (language) => {
       galleryBtn.style.paddingBottom = '8px';
       galleryBtn.setAttribute('href', './gallery.html');
       downloadCvBtn.style.paddingBottom = '8px';
+      downloadCvBtn.setAttribute('href', './cv/index.html');
       skillsToggle.classList.remove('skill-toggle-english');
       skillsToggle.classList.remove('skill-toggle-germany');
       navHome.innerHTML = data.Fa.home;
@@ -145,6 +146,7 @@ const toggleLanguage = (language) => {
       galleryBtn.style.paddingBottom = '6px';
       galleryBtn.setAttribute('href', './galleryEN.html');
       downloadCvBtn.style.paddingBottom = '6px';
+      downloadCvBtn.setAttribute('href', './cv/en/index.html');
       formSubmitBtn.style.paddingBottom = '6px';
       skillsToggle.classList.remove('skill-toggle-germany');
       skillsToggle.classList.add('skill-toggle-english');
@@ -195,6 +197,7 @@ const toggleLanguage = (language) => {
       galleryBtn.style.paddingBottom = '6px';
       galleryBtn.setAttribute('href', './galleryGER.html');
       downloadCvBtn.style.paddingBottom = '6px';
+      downloadCvBtn.setAttribute('href', './cv/en/index.html');
       formSubmitBtn.style.paddingBottom = '6px';
       skillsToggle.classList.remove('skill-toggle-germany');
       skillsToggle.classList.add('skill-toggle-germany');
