@@ -90,9 +90,11 @@ const toggleLanguage = (language) => {
         elem.style.direction = 'rtl';
         elem.parentElement.style.flexDirection = 'row';
       });
+      localStorage.setItem('language', 'Fa');
       body.style.fontFamily = 'Vazir';
       homeBtn.parentElement.style.paddingBottom = '8px';
       galleryBtn.style.paddingBottom = '8px';
+      galleryBtn.setAttribute('href', './gallery.html');
       downloadCvBtn.style.paddingBottom = '8px';
       skillsToggle.classList.remove('skill-toggle-english');
       skillsToggle.classList.remove('skill-toggle-germany');
@@ -137,9 +139,11 @@ const toggleLanguage = (language) => {
         elem.style.direction = 'ltr';
         elem.parentElement.style.flexDirection = 'row-reverse';
       });
+      localStorage.setItem('language', 'En');
       body.style.fontFamily = 'roboto';
       homeBtn.parentElement.style.paddingBottom = '6px';
       galleryBtn.style.paddingBottom = '6px';
+      galleryBtn.setAttribute('href', './galleryEN.html');
       downloadCvBtn.style.paddingBottom = '6px';
       formSubmitBtn.style.paddingBottom = '6px';
       skillsToggle.classList.remove('skill-toggle-germany');
@@ -185,9 +189,11 @@ const toggleLanguage = (language) => {
         elem.style.direction = 'ltr';
         elem.parentElement.style.flexDirection = 'row-reverse';
       });
+      localStorage.setItem('language', 'Ger');
       body.style.fontFamily = 'roboto';
       homeBtn.parentElement.style.paddingBottom = '6px';
       galleryBtn.style.paddingBottom = '6px';
+      galleryBtn.setAttribute('href', './galleryGER.html');
       downloadCvBtn.style.paddingBottom = '6px';
       formSubmitBtn.style.paddingBottom = '6px';
       skillsToggle.classList.remove('skill-toggle-germany');
@@ -291,6 +297,14 @@ if (localStorage.getItem('theme') === 'light_theme') {
   themeToggleBtn.classList.remove('active');
   document.body.classList.remove('light_theme');
   document.body.classList.add('dark_theme');
+}
+
+if (localStorage.getItem('language') === 'Fa') {
+  toggleLanguage('Fa');
+} else if (localStorage.getItem('language') === 'En') {
+  toggleLanguage('En');
+} else if (localStorage.getItem('language') === 'Ger') {
+  toggleLanguage('Ger');
 }
 
 function subFrm() {

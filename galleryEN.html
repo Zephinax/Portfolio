@@ -29,109 +29,137 @@
     <!-- Vazir font -->
     <link href="https://v1.fontapi.ir/css/Vazir" rel="stylesheet" />
   </head>
+  <style>
+    .section-subtitle::after {
+      opacity: 0;
+    }
+  </style>
 
   <body id="top" class="dark_theme">
     <!-----Header----->
 
-    <header class="header" data-header>
+    <header class="header" data-header="">
       <div class="container">
         <h1 class="h1 logo">
           <a href="#">Zephinax<span>.</span></a>
         </h1>
-
         <div class="navbar-actions">
-          <!-- <select name="language" id="lang">
-            <option value="en">En</option>
-            <option value="Fa">Fa</option>
-          </select> -->
-
           <button
             class="theme-btn"
             aria-label="Change Theme"
             title="Change Theme"
-            data-theme-btn
+            data-theme-btn=""
           >
             <span class="icon"></span>
           </button>
         </div>
-
         <button
-          class="nav-toggle-btn"
+          class="nav-toggle-btn active"
           aria-label="Toggle Menu"
           title="Toggle Menu"
-          data-nav-toggle-btn
+          data-nav-toggle-btn=""
           onclick="toggleNav()"
         >
           <span class="one"></span>
           <span class="two"></span>
           <span class="three"></span>
         </button>
-
-        <nav class="navbar" data-navbar>
-          <ul class="navbar-list" dir="rtl">
+        <nav
+          class="navbar active"
+          data-navbar=""
+          style="flex-direction: row-reverse"
+        >
+          <ul class="navbar-list" id="navList" dir="rtl" style="direction: ltr">
             <li>
-              <a
-                href="./index.html#home"
-                class="navbar-link"
-                onclick="toggleNav()"
-                ><ion-icon name="planet-outline"></ion-icon>خانه</a
+              <a href="./index.html" class="navbar-link" onclick="toggleNav()">
+                <ion-icon
+                  name="planet-outline"
+                  role="img"
+                  class="md hydrated"
+                  aria-label="planet outline"
+                ></ion-icon>
+                <span id="navHome">Home</span></a
               >
             </li>
-
             <li>
               <a
                 href="./index.html#about"
                 class="navbar-link"
                 onclick="toggleNav()"
-                ><ion-icon name="person-outline"></ion-icon>درباره من</a
+                ><ion-icon
+                  name="person-outline"
+                  role="img"
+                  class="md hydrated"
+                  aria-label="person outline"
+                ></ion-icon>
+                <span id="navAboutMe">About Me</span></a
               >
             </li>
-
             <li>
               <a
                 href="./index.html#skills"
                 class="navbar-link"
                 onclick="toggleNav()"
-                ><ion-icon name="construct-outline"></ion-icon>مهارت ها</a
+                ><ion-icon
+                  name="construct-outline"
+                  role="img"
+                  class="md hydrated"
+                  aria-label="construct outline"
+                ></ion-icon>
+                <span id="navSkills">Skills</span></a
               >
             </li>
-
             <li>
-              <a href="./gallery.html" class="navbar-link"
-                ><ion-icon name="images-outline"></ion-icon>گالری پروژه ها</a
+              <a href="./index.html./gallery.html" class="navbar-link"
+                ><ion-icon
+                  name="images-outline"
+                  role="img"
+                  class="md hydrated"
+                  aria-label="images outline"
+                ></ion-icon
+                ><span id="navGallery">Projects Gallery</span></a
               >
             </li>
-
             <li>
               <a
                 href="./index.html#contact"
                 class="navbar-link"
                 onclick="toggleNav()"
-                ><ion-icon name="call-outline"></ion-icon>ارتباط با من</a
+                ><ion-icon
+                  name="call-outline"
+                  role="img"
+                  class="md hydrated"
+                  aria-label="call outline"
+                ></ion-icon
+                ><span id="navContact">Contact Me</span></a
               >
             </li>
           </ul>
         </nav>
       </div>
     </header>
-
     <section class="project" id="portfolio">
       <ul class="project-list">
         <li>
-          <div class="project-content section-content">
-            <p class="section-subtitle">گالری پروژه ها</p>
+          <div
+            class="project-content section-content"
+            style="direction: ltr; text-align: left"
+          >
+            <p class="section-subtitle">Projects Gallery</p>
 
-            <h2 class="h3 section-title">میخوای بعضی از پروژه هام رو ببینی؟</h2>
+            <h2 class="h3 section-title">
+              Do you want to see some of my projects?
+            </h2>
 
             <p class="section-text">
-              بعضی از پروژه ها که ازشون خوشم میومد رو اینجا گذاشتم، البته پروژه
-              های دیگه رو میتونید داخل
+              I put some of the projects that I like here, of course, you can
+              see other projects in my
               <a
                 style="display: inline-block; color: var(--main-color)"
                 href="https://github.com/Zephinax"
-                >گیتهابم</a
+                >GitHub</a
               >
-              ببینید.
+              .
             </p>
           </div>
         </li>
@@ -238,8 +266,9 @@
       <div class="container">
         <p class="copyright">
           <a href="https://github.com/Zephinax/Portfolio"
-            >با کلیک بر روی این متن میتونید در توسعه این وبسایت مشارکت کنید
-          </a>
+            >You can contribute to the development of this website by clicking
+            on this text</a
+          >
         </p>
 
         <p class="copyright">
