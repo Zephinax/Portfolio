@@ -1,12 +1,4 @@
 'use strict';
-// const data = fetch('Languages.json')
-//   .then((response) => response.json('/assets/Languages.json'))
-//   .then((data) => {
-//     return data;
-//   })
-//   .catch((error) => console.error('Error loading JSON file:', error));
-
-// import data from 'Languages.json';
 
 const fetchData = async () => {
   try {
@@ -302,9 +294,7 @@ if (localStorage.getItem('theme') === 'light_theme') {
   document.body.classList.add('dark_theme');
 }
 
-if (localStorage.getItem('language') === 'Fa') {
-  toggleLanguage('Fa');
-} else if (localStorage.getItem('language') === 'En') {
+if (localStorage.getItem('language') === 'En') {
   toggleLanguage('En');
 } else if (localStorage.getItem('language') === 'Ger') {
   toggleLanguage('Ger');
