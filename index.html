@@ -5,34 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zephinax</title>
+    <script>
+      window.addEventListener(
+        'load',
+        function () {
+          const loader = document.getElementById('loading');
+          loader.style.display = 'none';
+        },
+        false
+      );
+    </script>
     <!-- favicon -->
     <link
       rel="shortcut icon"
       href="./assets/images/favico.png"
-      type="image/x-icon"
-    />
+      type="image/x-icon" />
     <link
       rel="preload"
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       as="style"
-      onload="this.rel='stylesheet'"
-    />
+      onload="this.rel='stylesheet'" />
     <!-- custom css link -->
     <link
       rel="preload"
       href="./assets/css/style.css"
       as="style"
-      onload="this.rel='stylesheet'"
-    />
+      onload="this.rel='stylesheet'" />
     <!-- google font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
   </head>
   <body id="body" class="dark_theme">
+    <div id="loading" class="loading">
+      <div class="terminal-loader">
+        <div class="terminal-header">
+          <div class="terminal-title">Status</div>
+          <div class="terminal-controls">
+            <div class="control close"></div>
+            <div class="control minimize"></div>
+            <div class="control maximize"></div>
+          </div>
+        </div>
+        <div class="text">Loading...</div>
+      </div>
+    </div>
     <!-----Header----->
     <header class="header" data-header>
       <div class="container">
@@ -48,13 +67,11 @@
               viewBox="0 0 24 24"
               aria-hidden="true"
               dataSlot="icon"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+              xmlns="http://www.w3.org/2000/svg">
               <path
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802"
-              ></path>
+                d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802"></path>
             </svg>
             <ul id="languageOptions" class="language-options">
               <li style="font-family: Vazir" onclick="toggleLanguage('Fa')">
@@ -72,8 +89,7 @@
             class="theme-btn"
             aria-label="Change Theme"
             title="Change Theme"
-            data-theme-btn
-          >
+            data-theme-btn>
             <span class="icon"></span>
           </button>
         </div>
@@ -82,8 +98,7 @@
           aria-label="Toggle Menu"
           title="Toggle Menu"
           data-nav-toggle-btn
-          onclick="toggleNav()"
-        >
+          onclick="toggleNav()">
           <span class="one"></span>
           <span class="two"></span>
           <span class="three"></span>
@@ -132,17 +147,14 @@
             <picture>
               <source
                 srcset="./assets/images/hero-banner.webp"
-                media="(min-width: 768px)"
-              />
+                media="(min-width: 768px)" />
               <source
                 srcset="./assets/images/hero-banner-md.webp"
-                media="(min-width: 500px)"
-              />
+                media="(min-width: 500px)" />
               <img
                 src="./assets/images/hero-banner-sm.webp"
                 alt="A man in a blue shirt with a happy expression"
-                class="w-100"
-              />
+                class="w-100" />
             </picture>
           </figure>
           <div class="hero-content">
@@ -159,8 +171,7 @@
             <li>
               <a
                 href="https://www.instagram.com/zephinax?igsh=MWlodHFsZW9qN2hy"
-                class="hero-social-link"
-              >
+                class="hero-social-link">
                 <i class="bx bxl-instagram-alt"></i>
                 <div id="instaToolTip" class="tooltip">اینستاگرام</div>
               </a>
@@ -174,8 +185,7 @@
             <li>
               <a
                 href="https://www.linkedin.com/in/zephinax?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                class="hero-social-link"
-              >
+                class="hero-social-link">
                 <ion-icon name="logo-linkedin"></ion-icon>
                 <div id="linkedToolTip" class="tooltip">لینکدین</div>
               </a>
@@ -191,8 +201,7 @@
             <img
               src="./assets/images/about-banner.webp"
               alt="A man in a alice blue shirt with a thinking expression"
-              class="w-100"
-            />
+              class="w-100" />
           </figure>
           <div class="about-content section-content" dir="rtl">
             <p id="aboutSubTitle" class="section-subtitle">درباره من</p>
@@ -237,8 +246,7 @@
                 id="downloadCvBtn"
                 href="./cv/index.html"
                 style="margin-bottom: 20px"
-                class="btn btn-primary"
-              >
+                class="btn btn-primary">
                 دانلود رزومه
               </a>
             </div>
@@ -263,8 +271,7 @@
                 <p
                   class="german-fix"
                   id="skillsSkill"
-                  style="margin-left: -7px"
-                >
+                  style="margin-left: -7px">
                   مهارت ها
                 </p>
               </button>
@@ -296,8 +303,7 @@
                   <div class="card-icon">
                     <img
                       src="./assets/images/javascript.png"
-                      alt="JavaScript"
-                    />
+                      alt="JavaScript" />
                   </div>
                 </div>
               </li>
@@ -359,8 +365,7 @@
                   <div class="card-icon">
                     <img
                       src="./assets/images/duckyScript.png"
-                      alt="duckyScript"
-                    />
+                      alt="duckyScript" />
                   </div>
                 </div>
               </li>
@@ -370,8 +375,7 @@
                   <div class="card-icon">
                     <img
                       src="./assets/images/Prompt.png"
-                      alt="Prompt Engineering"
-                    />
+                      alt="Prompt Engineering" />
                   </div>
                 </div>
               </li>
@@ -544,13 +548,11 @@
             action="https://api.web3forms.com/submit"
             method="POST"
             class="contact-form"
-            id="contactForm"
-          >
+            id="contactForm">
             <input
               type="hidden"
               name="access_key"
-              value="197dc552-7039-4771-a21d-2ca63fda926c"
-            />
+              value="197dc552-7039-4771-a21d-2ca63fda926c" />
             <div class="form-wrapper">
               <label id="formNameLastName" for="name" class="form-label"
                 >نام و نام حانوادگی</label
@@ -562,8 +564,7 @@
                   id="name"
                   required
                   placeholder="فلانی فلانیان"
-                  class="input-field"
-                />
+                  class="input-field" />
                 <ion-icon name="person-circle"></ion-icon>
               </div>
             </div>
@@ -576,8 +577,7 @@
                   id="email"
                   required
                   placeholder="felani@mail.com"
-                  class="input-field"
-                />
+                  class="input-field" />
                 <ion-icon name="mail"></ion-icon>
               </div>
             </div>
@@ -592,8 +592,7 @@
                   id="phone"
                   required
                   placeholder="09123456789"
-                  class="input-field"
-                />
+                  class="input-field" />
                 <ion-icon name="call"></ion-icon>
               </div>
             </div>
@@ -607,8 +606,7 @@
                   id="message"
                   required
                   placeholder="هنوز چیزی ننوشتی..."
-                  class="input-field"
-                ></textarea>
+                  class="input-field"></textarea>
                 <ion-icon name="chatbubbles"></ion-icon>
               </div>
             </div>
@@ -616,8 +614,7 @@
               type="submit"
               id="subBtn"
               class="btn btn-primary"
-              onclick="subFrm()"
-            >
+              onclick="subFrm()">
               ارسال پیام
             </button>
           </form>
@@ -642,11 +639,9 @@
     <script src="./assets/js/script.js"></script>
     <script
       type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script
       nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
