@@ -1,9 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa-IR">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="با وبسایت نمونه کار زفینکس آشنا شوید، یک توسعه‌دهنده‌ی وب علاقه‌مند به لینوکس و نرم‌افزارهای متن‌باز. پروژه‌های نوآورانه‌ای را کشف کنید که نشان‌دهنده‌ی تخصص او در HTML، CSS، جاوااسکریپت، ری‌اکت و موارد بیشتر است. از راه‌حل‌های خلاقانه و تکنولوژی‌های پیشرفته الهام بگیرید." />
+    <meta
+      name="keywords"
+      content="نمونه کار, توسعه دهنده وب, طراحی, پروژه ها, زفینکس, برنامه نویس, HTML, CSS, جاوااسکریپت, ری‌اکت, لینوکس, نرم افزار آزاد, متن باز, گیک, هوش مصنوعی, امنیت, اینترنت اشیا, گجت ها, موبایل, کامپیوتر, لپ تاپ, کاستوم رام, هکینتاش, UI, UX, برنامه نویسی سخت افزار, برنامه نویسی نرم افزار" />
+    <link rel="canonical" href="https://zephinax.ir/" />
     <title>Zephinax</title>
     <!-- favicon -->
     <link
@@ -27,11 +34,44 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
       rel="stylesheet" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "زفینکس",
+        "url": "https://zephinax.ir",
+        "image": "https://zephinax.ir/assets/images/profile-picture.jpg",
+        "sameAs": [
+          "https://www.instagram.com/zephinax",
+          "https://t.me/Zephinax",
+          "https://www.linkedin.com/in/zephinax",
+          "https://github.com/Zephinax"
+        ],
+        "jobTitle": "توسعه‌دهنده وب",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "زیکادو"
+        },
+        "description": "من یک توسعه‌دهنده وب، علاقه‌مند به لینوکس و نرم‌افزارهای متن‌باز هستم. به یادگیری و به اشتراک گذاشتن دانش علاقه‌مند هستم و از کار روی پروژه‌های چالش‌برانگیز مانند توسعه کاستوم رام و نصب هکینتاش لذت می‌برم.",
+        "skills": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "React",
+          "PHP",
+          "Python",
+          "طراحی UI/UX",
+          "هوش مصنوعی",
+          "امنیت",
+          "اینترنت اشیا"
+        ]
+      }
+    </script>
   </head>
   <body id="body" class="dark_theme">
     <!-----Header----->
     <header class="header" data-header>
-      <div class="container">
+      <nav class="container">
         <h1 class="h1 logo">
           <a href="#">Zephinax<span>.</span></a>
         </h1>
@@ -80,7 +120,7 @@
           <span class="two"></span>
           <span class="three"></span>
         </button>
-        <nav class="navbar" data-navbar>
+        <div class="navbar" data-navbar>
           <ul class="navbar-list" id="navList" dir="rtl">
             <li>
               <a href="#home" class="navbar-link" onclick="toggleNav()">
@@ -113,11 +153,11 @@
               >
             </li>
           </ul>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </header>
     <main>
-      <article class="container">
+      <div class="container">
         <!-----Hero----->
         <section class="hero" id="home">
           <figure class="hero-banner">
@@ -173,7 +213,7 @@
           ></a>
         </section>
         <!-----About----->
-        <section class="about" id="about">
+        <article class="about" id="about">
           <figure class="about-banner">
             <img
               src="./assets/images/about-banner.webp"
@@ -228,7 +268,7 @@
               </a>
             </div>
           </div>
-        </section>
+        </article>
         <!-----Skills----->
         <section class="skills" id="skills">
           <div class="skills-content section-content" dir="rtl">
@@ -596,7 +636,7 @@
             </button>
           </form>
         </section>
-      </article>
+      </div>
     </main>
     <!-----Footer----->
     <footer class="footer">
